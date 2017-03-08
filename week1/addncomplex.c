@@ -1,7 +1,7 @@
 #include<stdio.h>
 typedef struct{
     int real;
-    int imaginary;
+    int imag;
 }complex;
 complex num;
 complex findsum(int n)
@@ -12,7 +12,7 @@ complex findsum(int n)
 		printf("enter real and complex part of %d number:",j);
 		scanf("%d%d",&real[i],&imag[i]);
 		num.real+=real[i];
-		num.imaginary+=imag[i];
+		num.imag+=imag[i];
 	}
 	return num;
 }
@@ -22,6 +22,6 @@ int main(){
 	printf("how many complex numbers do you want to add:");
 	scanf("%d",&n);
 	num=findsum(n);
-	printf("the sum is %d+i%d",num.real,num.imaginary);    
+	printf("the sum is %d+i%d",num.real,num.imag);    
     return 0;
 }
