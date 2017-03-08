@@ -46,3 +46,4 @@ qd.r2.imaginary=((sqrt(-d))/2*a);
 
 }
 return qd;
+}
